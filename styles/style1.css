@@ -1,0 +1,298 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+  /*
+  Corpo
+*/
+body{
+    width: 100%;
+    min-height: 100vh;
+    color: white;
+    max-width: 1200px;
+    margin: 0 auto;
+    background-image: url(Background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    font-family: 'principal';
+    overflow: hidden;
+
+}
+
+.video-background{
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 75%;
+  object-fit: cover;
+  z-index: -1; 
+
+}
+
+html {
+    height: 100%;
+    overflow-y: hidden;
+}
+
+  /*
+  Cabeçalho
+*/
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    padding: 0.4rem 25rem;
+    top: 0;
+    position: fixed;
+    z-index: 1000;
+  }
+
+li {
+    display: inline-block;
+    margin: 12.5px;
+    text-align: center;
+}
+
+a {
+    color: white;
+}
+
+a:hover {
+    color: rgb(209, 209, 209);
+    transition: 0.3s all;
+}
+
+  /*
+  Nome "ORION MONTE SEU PC" e parágrafo "Escolha cada componente..."
+*/
+
+img {
+    position: absolute;
+    left: 150px;
+    width: 480px;
+    top: 180px;
+}
+
+  /*
+  CADASTRE-SE E LOGIN
+*/
+
+
+.resto {
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 0.4rem;
+    margin-right: 15px;
+}
+
+  /*
+  Nome "ORION"
+*/
+
+
+.nome {
+    top: 4px;
+    left: 10px;
+    position: fixed;
+    width: 100px;
+    z-index: 1000;
+}
+
+  /*
+  Botão Monte seu PC
+*/
+
+.button {
+    border:0;
+    background-color: rgb(44, 123, 168);
+    color: white;
+    border-radius: 10px;
+    width: 450px;
+    height: 60px;
+    cursor: pointer;
+    position: absolute;
+    bottom: 120px;
+    left: 170px;
+    font-size: 26px;
+    font-family: heavitas;
+}
+
+.button:hover {
+    background-color: rgb(14, 95, 132);
+    color: white;
+    transition: 0.3s all;
+  }
+
+
+
+  /*
+  Botão de pesquisa
+*/
+
+  .container {
+    position: absolute;
+    --size-button: 40px;
+    color: white;
+    top: 10px;
+    right: 230px;
+}
+  
+  .input {
+    padding-left: var(--size-button);
+    height: var(--size-button);
+    font-size: 15px;
+    border: none;
+    color: #fff;
+    outline: none;
+    width: var(--size-button);
+    transition: all ease 0.3s;
+    background-color: #191A1E;
+    box-shadow: 1.5px 1.5px 3px #0e0e0e, -1.5px -1.5px 3px rgb(95 94 94 / 25%), inset 0px 0px 0px #0e0e0e, inset 0px -0px 0px #5f5e5e;
+    border-radius: 50px;
+    cursor: pointer;
+  }
+  
+  .input:focus,
+  .input:not(:invalid) {
+    width: 200px;
+    cursor: text;
+    box-shadow: 0px 0px 0px #0e0e0e, 0px 0px 0px rgb(95 94 94 / 25%), inset 1.5px 1.5px 3px #0e0e0e, inset -1.5px -1.5px 3px #5f5e5e;
+  }
+  
+  .input:focus + .icon,
+  .input:not(:invalid) + .icon {
+    pointer-events: all;
+    cursor: pointer;
+  }
+  
+  .container .icon {
+    position: absolute;
+    width: var(--size-button);
+    height: var(--size-button);
+    top: 0;
+    left: 0;
+    padding: 8px;
+    pointer-events: none;
+  }
+  
+  .container .icon svg {
+    width: 100%;
+    height: 100%;
+  }
+  /*botao de rede social
+  */  
+  .card {
+    display: flex;
+    height: 50px;
+    width: 200px;
+    position: fixed;
+    bottom: 1px; /* Ajuste conforme necessário para a distância do topo */
+    right: 1px; /* Ajuste conforme necessário para a distância da esquerda */
+    z-index: 1000; /* Para garantir que fique na frente de outros elementos, se necessário */
+
+  /* Adicione mais estilos conforme necessário */
+  
+  }
+  
+  .card svg {
+    position: absolute;
+    display: flex;
+    width: 60%;
+    height: 100%;
+    font-size: 24px;
+    font-weight: 700;
+    opacity: 1;
+    transition: opacity 0.25s;
+    z-index: 2;
+    cursor: pointer;
+  }
+  
+  .card .social-link1,.card .social-link2,.card .social-link3,.card .social-link4 {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 25%;
+    color: whitesmoke;
+    font-size: 24px;
+    text-decoration: none;
+    transition: 0.25s;
+    border-radius: 50px;
+  }
+  
+  .card svg {
+    transform: scale(1);
+  }
+  
+  .card .social-link1:hover {
+    background: #f09433;
+    background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+    background: -webkit-linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%);
+    background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 );
+    animation: bounce_613 0.4s linear;
+  }
+  
+  .card .social-link2:hover {
+    background-color: #00ccff;
+    animation: bounce_613 0.4s linear;
+  }
+  
+  .card .social-link3:hover {
+    background-color: #5865f2;
+    animation: bounce_613 0.4s linear;
+  }
+  
+  .card .social-link4:hover {
+    background-color: #12a50b;
+    animation: bounce_613 0.4s linear;
+  }
+  
+  @keyframes bounce_613 {
+    40% {
+      transform: scale(1.4);
+    }
+  
+    60% {
+      transform: scale(0.8);
+    }
+  
+    80% {
+      transform: scale(1.2);
+    }
+  
+    100% {
+      transform: scale(1);
+    }
+  }
+
+a:link {
+  text-decoration: none;
+}
+
+/*
+loader
+*/
+#preloader {
+  background: #000 url(/assets/loading_12.gif) no-repeat center center;
+  background-size: 15%;
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  z-index: 10000;
+  left: 0;
+}
+
+iframe {
+  width: 0px;
+  height: 0px;
+  position: absolute;
+  right: -10px;
+}

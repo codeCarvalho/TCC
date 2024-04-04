@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt_BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles/quiz.css">
+    <title>Quiz</title>
+
+    <!--css do background (só consegui fazer funcionar aqui)-->
+    <style>
+        #video-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    z-index: -1;
+        }
+
+    </style>
+</head>
+
+<body>
+     <!--plano de fundo-->
+     
+    <video autoplay muted loop id="video-background">
+        <source src="/images/space_animation.mp4" type="video/mp4">
+    </video>
+  </div>
+
+ <!--Pergunta--> 
+
+ <form class="form">
+    <div class="form-title"><span>Você</span></div>
+     <div class="title-2"><span>Precisa de ajuda para montar seu PC?</span></div>
+     <div class="input-container">
+     </div>
+
+     <section class="bg-stars">
+       <span class="star"></span>
+       <span class="star"></span>
+       <span class="star"></span>
+       <span class="star"></span>
+     </section>
+  </form>
+
+  <!--botão 1-->
+  <button class="btn" type="button">
+    <strong>Gueimes</a></strong>
+    <div id="container-stars">
+      <div id="stars"></div>
+    </div>
+
+  <!--botão 2-->
+  <button class="btn2" type="button">
+    <strong></a>Studing</strong>
+    <div id="container-stars">
+      <div id="stars"></div>
+    </div>
+
+
+    <!--botão 3-->
+  <button class="btn3" type="button">
+    <strong>worquing</a></strong>
+    <div id="container-stars">
+      <div id="stars"></div>
+    </div>
+  
+    <div id="glow">
+      <div class="circle"></div>
+      <div class="circle"></div>
+    </div>
+  </button>
+
+</body>
+</html>
